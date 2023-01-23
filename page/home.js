@@ -1,8 +1,9 @@
-import { PageTemplate } from "../lib/PageTemplate";
+import { PageTemplate } from "../lib/PageTemplate.js";
 
 class PageHome extends PageTemplate {
     mainHTML() {
-        return `<h1>Welcome To The Page</h1>`
+        return `<h1>Welcome to HOME PAGE!</h1>`;
     }
 }
+
 export { PageHome }

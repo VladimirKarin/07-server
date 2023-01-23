@@ -1,9 +1,15 @@
-import { PageTemplate } from "../lib/PageTemplate";
+import { PageTemplate } from "../lib/PageTemplate.js";
 
 class Page404 extends PageTemplate {
+    constructor() {
+        super();
+        this.thisTitle = '404';
+    }
+
     mainHTML() {
-        return `<h1>404</h1>
-            <p>Page not found!</p>`
+        return `<h1>404!</h1>
+                <p>Page not found!</p>`;
     }
 }
+
 export { Page404 }
